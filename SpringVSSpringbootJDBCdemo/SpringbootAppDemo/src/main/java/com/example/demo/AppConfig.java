@@ -13,7 +13,14 @@ public class AppConfig {
         
 	    // Configure DataSource (MySQL connection details)
 	    //java based configuration
-	    //Normal JDBC 
+	    //spring  JDBC //spring data JDBC
+	     //difference between spring JDBC and spring data JDBC
+	     //spring data JDBC is built on top of spring JDBC
+	     //spring data JDBC provides repository support for JDBC
+	     //spring JDBC is lower level API
+	     //spring data JDBC is higher level API
+	     //spring data JDBC provides CRUD operations
+	     //spring JDBC requires manual implementation of CRUD operations
 	    @Bean
 	    public DataSource dataSource() {//spring container will call this method 
 	    	//and return the object of DriverManagerDataSource to spring container

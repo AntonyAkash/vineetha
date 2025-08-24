@@ -13,7 +13,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 @ComponentScan(basePackages = "com")
 @PropertySource("src/main/resources/:application.properties")
 public class AppConfig {
-        
+        //Spring JDBC configuration   //differnce between spring jdbc and spring data jdbc
 	    // Configure DataSource (MySQL connection details)
 	    //java based configuration
 	    @Bean

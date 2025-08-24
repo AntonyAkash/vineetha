@@ -3192,3 +3192,264 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.eclipse.lsp4e 1 0 2025-08-22 23:10:38.067
 !MESSAGE [Info]	[code-referencing] No match found
+!SESSION 2025-08-24 21:12:17.172 -----------------------------------------------
+eclipse.buildId=4.33.0.202410162246
+java.version=21.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-24 21:12:21.527
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-08-24 21:12:34.475
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-24 21:12:35.474
+!MESSAGE Logback config file: C:\STS\Vine Class\SpringVSSpringbootJDBCdemo\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-08-24 21:12:36.198
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-08-24 21:12:36.198
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-08-24 21:12:36.739
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-08-24 21:12:36.739
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-08-24 21:12:42.396
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Temp\sts-4.26.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/STS/Vine Class/SpringVSSpringbootJDBCdemo/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1756050162394
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\Temp\sts-4.26.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.58.0.202410160331\servers\spring-boot-language-server\spring-boot-language-server-1.58.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-24 21:12:42.397
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-08-24 21:12:42.406
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 4308
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-24 21:12:44.664
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-24 21:12:44.691
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-24 21:12:45.062
+!MESSAGE Boot project ADDED: SpringFrameworkApp
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-24 21:12:45.064
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-24 21:12:45.066
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-24 21:12:45.070
+!MESSAGE Boot project ADDED: SpringbootAppDemo
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-08-24 21:12:45.127
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:12:51.446
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.348.0 initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:12:52.257
+!MESSAGE [Info]	[certificates] Removed 11 expired certificates
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:16:54.948
+!MESSAGE [Info]	[default] Context provider relatedFilesShim exceeded time budget of 150ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:16:55.785
+!MESSAGE [Info]	[fetchCompletions] Request 377b7b4b-7b3b-4c28-a7fb-7a6ca863c492 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 811.6564999999828ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:16:55.785
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:16:56.230
+!MESSAGE [Info]	[fetchCompletions] Request 7b726603-1de3-48e4-bcf3-e60ad2170cc5 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 297.10449999998673ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:16:56.312
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:16:59.400
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:00.360
+!MESSAGE [Info]	[code-referencing] No match found
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:02.257
+!MESSAGE [Info]	[fetchCompletions] Request 2de9dd12-605d-4809-b5be-ca69ac42a073 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 298.3613999999943ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:02.296
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:08.413
+!MESSAGE [Info]	[fetchCompletions] Request b978639c-8db8-4f7f-9147-97eddb8a6cca at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 292.49359999998705ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:08.459
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:08.755
+!MESSAGE [Info]	[fetchCompletions] Request 770c75d5-2c8f-4dfb-9c66-ecbcc30436b1 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 289.7886999999755ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:08.822
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:09.575
+!MESSAGE [Info]	[fetchCompletions] Request 5e2178e0-c698-4fe4-913c-ee77bb7118ed at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 282.7131999999983ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:09.655
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:10.205
+!MESSAGE [Info]	[fetchCompletions] Request a0a520a1-2c88-4c4d-97e0-5b356d30868f at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 325.0835000000079ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:10.267
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:10.584
+!MESSAGE [Info]	[fetchCompletions] Request f5f940ce-b897-4f5d-a56b-cb41f90d3f95 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 295.6872999999905ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:10.638
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:10.932
+!MESSAGE [Info]	[fetchCompletions] Request c49c23a7-5876-442e-b15c-4195208e8396 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 276.81670000002487ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:10.994
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:12.879
+!MESSAGE [Info]	[fetchCompletions] Request 17979015-42bc-4d8c-9b2f-8076e3754053 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 291.585699999996ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:12.947
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:13.250
+!MESSAGE [Info]	[fetchCompletions] Request 94128094-29b0-4528-82d3-5eb107b70c12 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 295.8057999999728ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:13.325
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:16.979
+!MESSAGE [Info]	[fetchCompletions] Request e9bd1e6c-c8ae-4be6-af39-771b97c99f07 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 295.9185999999754ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:17.054
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:21.605
+!MESSAGE [Info]	[fetchCompletions] Request 40b43ae8-4e60-401b-91f4-4174713b9983 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 314.196100000001ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:21.705
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:26.446
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:26.767
+!MESSAGE [Info]	[code-referencing] No match found
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:31.359
+!MESSAGE [Info]	[fetchCompletions] Request 251a1306-34d7-42d2-973b-75901232f64c at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 286.31609999999637ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:31.421
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:36.721
+!MESSAGE [Info]	[fetchCompletions] Request 485b7825-d0c5-4c07-a097-1ab50c0f3b4c at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 290.97320000000764ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:36.761
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:37.386
+!MESSAGE [Info]	[fetchCompletions] Request a0b9f4f7-4b5f-42e8-9980-46433ea99ef6 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 323.28120000002673ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:17:37.439
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [null]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-24 21:19:03.501
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-24 21:19:03.517
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:21:46.783
+!MESSAGE [Info]	[fetchCompletions] Request ef3592f9-c7c1-4259-a305-348120b9a0a6 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 658.1155000000726ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:21:47.394
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:21:49.969
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-24 21:21:51.231
+!MESSAGE [Info]	[code-referencing] No match found
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-24 21:35:05.589
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-24 21:35:05.618
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-24 21:35:05.708
+!MESSAGE [Info] Document is null for editor: VineController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-24 21:35:05.710
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringbootJDBCdemo/SpringbootAppDemo/src/main/java/com/example/demo/VineController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-24 21:35:05.770
+!MESSAGE [Info] Document is null for editor: AppConfig.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-24 21:35:05.772
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringbootJDBCdemo/SpringFrameworkApp/src/main/java/com/vine/AppConfig.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-24 21:35:05.910
+!MESSAGE [Info] Document is null for editor: VineController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-24 21:35:05.911
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringbootJDBCdemo/SpringFrameworkApp/src/main/java/com/vine/VineController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-24 21:35:05.932
+!MESSAGE [Info] Document is null for editor: vine.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-24 21:35:05.933
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringbootJDBCdemo/SpringFrameworkApp/src/main/resources/vine.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-24 21:35:05.961
+!MESSAGE [Info] Document is null for editor: Vineservice.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-24 21:35:05.963
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringbootJDBCdemo/SpringFrameworkApp/src/main/java/com/vine/Vineservice.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-24 21:35:06.014
+!MESSAGE [Info] Document is null for editor: pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-24 21:35:06.015
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringbootJDBCdemo/SpringFrameworkApp/pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-24 21:35:06.055
+!MESSAGE [Info] Document is null for editor: pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-24 21:35:06.056
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringbootJDBCdemo/SpringbootAppDemo/pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-24 21:35:06.174
+!MESSAGE [Info] Document is null for editor: AppConfig.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-24 21:35:06.175
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringbootJDBCdemo/SpringbootAppDemo/src/main/java/com/example/demo/AppConfig.java
