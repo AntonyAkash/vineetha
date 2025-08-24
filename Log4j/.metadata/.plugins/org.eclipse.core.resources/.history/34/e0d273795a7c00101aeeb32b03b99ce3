@@ -1,0 +1,16 @@
+package com.example.demo;
+
+import java.util.logging.Logger;
+
+import org.apache.logging.log4j.LogManager;
+public class Controller {
+    
+	private static Logger logger = Logger.getLogger(String.valueOf(Controller.class));
+	public void logMessage() {
+		logger.info("This is an info message");
+		logger.warn("This is a warning message");
+		logger.error("This is an error message");
+		logger.debug("This is a debug message");
+		logger.trace("This is a trace message");
+	}
+}

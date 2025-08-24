@@ -1,0 +1,9 @@
+package com.example.demo;
+
+public class simpletestclass {
+   @Test
+   public void testMethod() {
+	   // This is a simple test method
+	   System.out.println("This is a test method in a simple test class.");
+   }
+}

@@ -1,0 +1,11 @@
+package com.example.demo;
+
+import org.slf4j.Logger;
+
+public class Controller {
+    
+	Logger logger = Logger.getLogger(Controller.class);
+	public String getMessage() {
+		return "Hello, World!";
+	}
+}

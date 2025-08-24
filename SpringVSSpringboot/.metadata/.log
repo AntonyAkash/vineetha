@@ -1,0 +1,2323 @@
+!SESSION 2025-08-22 18:40:58.978 -----------------------------------------------
+eclipse.buildId=4.33.0.202410162246
+java.version=21.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-22 18:41:01.754
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-22 18:41:43.098
+!MESSAGE Logback config file: C:\STS\Vine Class\SpringVSSpringboot\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-08-22 18:41:43.668
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-08-22 18:41:43.668
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-08-22 18:41:44.122
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-08-22 18:41:44.122
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 18:41:49.476
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-08-22 18:41:49.574
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 18:41:49.655
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:41:53.041
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.348.0 initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:41:53.287
+!MESSAGE [Info]	[certificates] Removed 11 expired certificates
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 18:45:50.391
+!MESSAGE Classpath changed for project: SpringFrameworkDemo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 18:45:51.219
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 18:45:51.234
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-08-22 18:45:57.111
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Temp\sts-4.26.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/STS/Vine Class/SpringVSSpringboot/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1755868557109
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\Temp\sts-4.26.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.58.0.202410160331\servers\spring-boot-language-server\spring-boot-language-server-1.58.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 18:45:57.112
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-08-22 18:45:57.123
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 21652
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-08-22 18:46:02.012
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:152)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:225)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4124)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-08-22 18:46:02.090
+!MESSAGE Could not get trigger characters due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getFuture(LSContentAssistProcessor.java:336)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getCompletionProposalAutoActivationCharacters(LSContentAssistProcessor.java:377)
+	at org.eclipse.jface.text.contentassist.IContentAssistProcessorExtension$1.isCompletionProposalAutoActivation(IContentAssistProcessorExtension.java:115)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.getAutoActivationTriggerType(ContentAssistant.java:1249)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.keyPressed(ContentAssistant.java:346)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.verifyKey(ContentAssistant.java:375)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:482)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:68)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1198)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1183)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:853)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5740)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5424)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1198)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1183)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1225)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1221)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1704)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4849)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:347)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4727)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5091)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3710)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-08-22 18:46:02.142
+!MESSAGE Could not get trigger characters due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getFuture(LSContentAssistProcessor.java:336)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getContextInformationAutoActivationCharacters(LSContentAssistProcessor.java:384)
+	at org.eclipse.jface.text.contentassist.IContentAssistProcessorExtension$1.isContextInformationAutoActivation(IContentAssistProcessorExtension.java:128)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.getAutoActivationTriggerType(ContentAssistant.java:1252)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.keyPressed(ContentAssistant.java:346)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.verifyKey(ContentAssistant.java:375)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:482)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:68)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1198)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1183)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:853)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5740)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5424)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1198)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1183)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1225)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1221)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1704)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4849)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:347)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4727)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5091)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3710)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-08-22 18:46:02.194
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:73)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 18:46:02.229
+!MESSAGE [Info] Language ID not found for extension: xml
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:46:04.332
+!MESSAGE [Info]	[fetchCompletions] Request c2f0db83-bfc5-41ed-846a-413ffb1fae17 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 1062.8476000000082ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:46:04.418
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:46:22.326
+!MESSAGE [Info]	[fetchCompletions] Request 8d284ebe-c5c6-4061-b469-5b1e50eb6b48 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 277.8544000000111ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:46:22.407
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:46:23.884
+!MESSAGE [Info]	[fetchCompletions] Request 10f435db-04b1-4977-90ab-777fd98bb974 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 302.7516000000178ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:46:24.662
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 18:46:34.380
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 18:46:34.390
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 18:46:50.608
+!MESSAGE [Info] Document is null for editor: pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 18:46:50.609
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringboot/SpringFrameworkDemo/pom.xml
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:46:56.488
+!MESSAGE [Info]	[fetchCompletions] Request 49c72d05-d030-483b-9933-69a968878ae8 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 366.43920000002254ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:46:57.012
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-08-22 18:47:00.978
+!MESSAGE Could not read pom.xml
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:245)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </dependency> must match start tag name <dependencies> from line 7 (position: TEXT seen ...</dependency>\r\n    </dependency>... @14:18) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
+	... 24 more
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </dependency> must match start tag name <dependencies> from line 7 (position: TEXT seen ...</dependency>\r\n    </dependency>... @14:18) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:2151)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1418)
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1360)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2317)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
+	... 26 more
+!SUBENTRY 1 org.eclipse.m2e.core 4 0 2025-08-22 18:47:00.979
+!MESSAGE Could not read pom.xml
+!STACK 0
+org.apache.maven.model.io.ModelParseException: end tag name </dependency> must match start tag name <dependencies> from line 7 (position: TEXT seen ...</dependency>\r\n    </dependency>... @14:18) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </dependency> must match start tag name <dependencies> from line 7 (position: TEXT seen ...</dependency>\r\n    </dependency>... @14:18) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:2151)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1418)
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1360)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2317)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
+	... 26 more
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:47:13.095
+!MESSAGE [Info]	[fetchCompletions] Request 5436a9c1-f1bf-44b8-871e-ad8a3d23f8f8 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 295.1028000000515ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:47:13.140
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:47:13.555
+!MESSAGE [Info]	[fetchCompletions] Request 9af4cd48-4dae-4980-be3a-5e4fcdb749ba at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 326.26430000003893ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:47:14.679
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:47:15.000
+!MESSAGE [Info]	[fetchCompletions] Request b007f673-23e9-469e-a42e-a9b3ce82545f at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 309.1056000000099ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:47:15.077
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:47:16.266
+!MESSAGE [Info]	[fetchCompletions] Request 65a5d6f6-b6a9-4f33-b0fc-6a49bcced02d at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 277.79899999999907ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:47:16.305
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 18:47:20.065
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 18:47:20.073
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 18:47:20.433
+!MESSAGE Classpath changed for project: SpringFrameworkDemo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 18:47:20.435
+!MESSAGE Boot project ADDED: SpringFrameworkDemo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 18:47:20.436
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 18:47:20.436
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 18:47:20.515
+!MESSAGE Classpath changed for project: SpringFrameworkDemo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 18:47:21.457
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 18:47:21.461
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 18:47:23.268
+!MESSAGE Classpath changed for project: SpringFrameworkDemo
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:52:55.414
+!MESSAGE [Info]	[fetchCompletions] Request 339d8182-2f2d-4b30-a633-7eacbbee15f1 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 943.7804999999935ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:52:55.748
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:52:56.488
+!MESSAGE [Info]	[fetchCompletions] Request 7340fff9-dcd7-467d-a17f-c279738d62da at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 722.2906000000658ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:52:58.956
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 18:53:01.945
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 18:53:01.953
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 18:53:02.268
+!MESSAGE Classpath changed for project: SpringFrameworkDemo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 18:53:03.321
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 18:53:03.324
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 18:53:05.541
+!MESSAGE Classpath changed for project: SpringFrameworkDemo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 18:53:31.241
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 18:53:31.246
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:26.154
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:26.156
+!MESSAGE [Info]	[fetchCompletions] Request 4fc42cc0-922e-444b-942f-8efc36a76697 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 803.1652999999933ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:26.484
+!MESSAGE [Info]	[fetchCompletions] Request dc6dadbb-cfe4-4b42-bdd0-a0733e14ef06 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 311.67869999993127ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:26.488
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:27.188
+!MESSAGE [Info]	[fetchCompletions] Request 3de30e4d-5581-4c11-8325-a4294546f7b6 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 283.3619999999646ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:28.001
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 18:58:29.409
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 18:58:29.415
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:53.802
+!MESSAGE [Info]	[fetchCompletions] Request d765b5e7-4abf-4935-a514-ef6c264d7d9d at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 295.07519999996293ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:53.820
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:54.561
+!MESSAGE [Info]	[fetchCompletions] Request 0eddf117-ba31-41c7-bf36-e21388da786d at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 321.51969999994617ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:54.597
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:55.070
+!MESSAGE [Info]	[fetchCompletions] Request bf76a3ba-862e-45c2-8ac0-462080199f37 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 299.93170000007376ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:55.113
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:55.418
+!MESSAGE [Info]	[fetchCompletions] Request c686c568-a631-4e51-a2aa-31fe13944e67 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 298.9562000000151ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:55.464
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:55.777
+!MESSAGE [Info]	[fetchCompletions] Request ca571831-614b-4617-bf53-f6140db760d5 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 297.282600000035ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:55.823
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:56.234
+!MESSAGE [Info]	[fetchCompletions] Request 2d12a524-7887-4c80-9684-bfd9e452f064 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 316.3402000000933ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:56.277
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:56.579
+!MESSAGE [Info]	[fetchCompletions] Request ff39f004-55b3-4a50-aaeb-dc692eab8952 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 284.29940000001807ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:56.626
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:56.940
+!MESSAGE [Info]	[fetchCompletions] Request a6efe456-90ef-4b02-8ec8-bd3e4368c62f at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 309.2232999999542ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:56.983
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:57.287
+!MESSAGE [Info]	[fetchCompletions] Request ffc9414d-c7a0-4a5e-b3d4-19621271e4e0 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 284.6964999999618ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 18:58:57.346
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 18:58:58.680
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 18:58:58.686
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 19:07:15.244
+!MESSAGE Classpath changed for project: SpringBootDemo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 19:07:15.247
+!MESSAGE Boot project ADDED: SpringBootDemo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 19:07:16.012
+!MESSAGE Classpath changed for project: SpringBootDemo
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 19:07:48.548
+!MESSAGE [Info]	[fetchCompletions] Request ee667aad-402d-4cbf-ac2f-67d9f6270435 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 674.7036000001244ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 19:07:48.851
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 19:07:50.400
+!MESSAGE [Info]	[fetchCompletions] Request 23d9092c-633c-4bec-9451-d418dcf9f2c9 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 309.4625999999698ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 19:07:50.446
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 19:07:53.632
+!MESSAGE Classpath changed for project: SpringBootDemo
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 19:08:19.533
+!MESSAGE [Info]	[fetchCompletions] Request 0ef49e36-a6a1-40cd-86e4-bde4abec2ab2 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 305.07789999991655ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 19:08:19.578
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 19:08:22.867
+!MESSAGE Classpath changed for project: SpringBootDemo
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 19:17:37.379
+!MESSAGE [Info]	[fetchCompletions] Request 107dad9a-3b0b-4e02-ba1f-3de10c4369ee at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 822.1378999999724ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 19:17:37.764
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 19:17:38.215
+!MESSAGE [Info]	[fetchCompletions] Request 2f3f1247-3077-4597-ae03-cb909ec07cf7 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 302.5142999999225ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 19:17:38.531
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 19:17:41.738
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 19:17:41.741
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 19:17:41.962
+!MESSAGE Classpath changed for project: SpringFrameworkDemo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 19:17:42.039
+!MESSAGE Classpath changed for project: SpringFrameworkDemo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 19:17:43.019
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 19:17:43.021
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 19:17:43.277
+!MESSAGE Classpath changed for project: SpringFrameworkDemo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 19:18:14.507
+!MESSAGE Classpath changed for project: SpringFrameworkDemo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 19:18:14.753
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 19:18:14.757
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 19:19:30.421
+!MESSAGE [Info]	[fetchCompletions] Request 83b2ffba-aac1-4dca-9269-f334a3e7470a at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 291.2964999997057ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 19:19:30.582
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 19:19:36.187
+!MESSAGE [Info]	[fetchCompletions] Request ee437a38-d557-4ea4-9d53-5752f2aac8ba at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 310.13440000033006ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 19:19:36.309
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 19:19:37.843
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 19:19:37.844
+!MESSAGE [Info]	[fetchCompletions] Request 12ab9986-2f6d-4c44-8c92-1b6520922eaa at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 591.4610000001267ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 19:19:38.366
+!MESSAGE [Info]	[fetchCompletions] Request e9ece4cf-0940-4e7e-8142-bbce700bf937 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 358.90849999990314ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 19:19:38.468
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 19:20:14.108
+!MESSAGE [Info] Document is null for editor: pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 19:20:14.110
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringboot/SpringFrameworkDemo/pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 19:20:14.145
+!MESSAGE [Info] Document is null for editor: pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 19:20:14.146
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringboot/SpringBootDemo/pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 19:20:14.214
+!MESSAGE [Info] Document is null for editor: SpringBootDemoApplication.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 19:20:14.214
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringboot/SpringBootDemo/src/main/java/com/example/demo/SpringBootDemoApplication.java
+!SESSION 2025-08-22 20:02:55.092 -----------------------------------------------
+eclipse.buildId=4.33.0.202410162246
+java.version=21.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-22 20:02:58.322
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-22 20:03:12.078
+!MESSAGE Logback config file: C:\STS\Vine Class\SpringVSSpringboot\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-08-22 20:03:12.643
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-08-22 20:03:12.643
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-08-22 20:03:13.035
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-08-22 20:03:13.035
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-08-22 20:03:18.164
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Temp\sts-4.26.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/STS/Vine Class/SpringVSSpringboot/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1755873198163
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\Temp\sts-4.26.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.58.0.202410160331\servers\spring-boot-language-server\spring-boot-language-server-1.58.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 20:03:18.165
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-08-22 20:03:18.171
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 19948
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:03:19.615
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:03:19.636
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 20:03:19.776
+!MESSAGE Boot project ADDED: SpringBootDemo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 20:03:19.777
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 20:03:19.778
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 20:03:19.780
+!MESSAGE Boot project ADDED: SpringFrameworkDemo
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-08-22 20:03:19.858
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:03:25.013
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.348.0 initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:03:25.540
+!MESSAGE [Info]	[certificates] Removed 11 expired certificates
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:03:56.629
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:03:56.646
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:04:00.037
+!MESSAGE [Info]	[fetchCompletions] Request 4ef58984-6232-4c23-a967-ebd320b28d4e at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 777.3505000000005ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:04:00.207
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:04:07.971
+!MESSAGE [Info]	[fetchCompletions] Request 235783a3-971b-46bf-a686-046322ec3291 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 294.4444999999978ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:04:08.026
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:04:11.714
+!MESSAGE [Info]	[fetchCompletions] Request a51aaeb5-54b2-4877-b953-049b61c67448 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 306.3345000000045ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:04:11.750
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:04:12.739
+!MESSAGE [Info]	[fetchCompletions] Request 9b142699-d05c-480e-8b0d-31a8648333c0 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 296.07629999999335ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:04:12.885
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:04:13.165
+!MESSAGE [Info]	[fetchCompletions] Request 28f8b7bc-fecf-46d6-aa02-7486d5f4295d at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 264.0555999999997ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:04:13.359
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:04:13.629
+!MESSAGE [Info]	[fetchCompletions] Request a43bcbe7-cec7-42e2-ad92-fb1fad12b46b at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 256.9092000000019ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:04:13.717
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:04:32.398
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:04:32.415
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:04:34.893
+!MESSAGE [Info]	[fetchCompletions] Request 4cdb8a92-2bac-4d3c-b891-018a5489b309 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 297.12680000001274ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:04:34.963
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:04:35.925
+!MESSAGE [Info]	[fetchCompletions] Request 4c66b037-21d6-47e9-8af1-334bcf91853f at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 334.2014999999956ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:04:35.973
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:04:39.128
+!MESSAGE [Info]	[fetchCompletions] Request 7acaebed-37c0-4c85-850d-c62e677f2d50 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 291.7537999999913ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:04:39.218
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 20:05:19.187
+!MESSAGE Classpath changed for project: SpringFrameworkDemo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:05:19.344
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:05:19.350
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:06:02.097
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringboot/SpringFrameworkDemo/src/main/java/com/vine/AppConfig.java
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:06:02.215
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:06:02.221
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:06:03.752
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringboot/SpringFrameworkDemo/src/main/java/com/vine/Main.java
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:06:04.288
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:06:04.293
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:06:07.851
+!MESSAGE [Info]	[fetchCompletions] Request c873abd5-c079-4a83-8dec-2f07ae9a7111 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 277.24419999998645ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:06:07.853
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:06:09.177
+!MESSAGE [Info]	[fetchCompletions] Request e41d272b-9576-4728-9c39-721a94abb6c5 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 269.8883999999962ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:06:09.238
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:06:21.276
+!MESSAGE [Info]	[fetchCompletions] Request f46d80dd-eab9-4c73-87a7-638105c292a3 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 258.6594000000041ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:06:21.456
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:06:21.758
+!MESSAGE [Info]	[fetchCompletions] Request 794d872e-813c-4ace-aad7-487d366f1d53 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 289.03880000000936ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:06:21.808
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:06:22.075
+!MESSAGE [Info]	[fetchCompletions] Request 897e263b-7c88-44b0-bdaa-a0bbd44d6a9c at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 256.94409999999334ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:06:22.161
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:06:22.457
+!MESSAGE [Info]	[fetchCompletions] Request f194c4c8-f13f-4b4f-b595-8fab408191cd at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 282.0188999999955ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:06:22.508
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:06:22.804
+!MESSAGE [Info]	[fetchCompletions] Request 45d4789a-429c-4b5d-acb6-a13bb2b253a4 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 281.92929999998887ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:06:22.861
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:06:26.181
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:06:26.185
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:06:43.183
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:06:43.191
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:06:46.049
+!MESSAGE [Info]	[fetchCompletions] Request e6559eab-6f57-42e7-a3b9-b8b7502b4968 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 300.7258000000147ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:06:46.050
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:06:46.509
+!MESSAGE [Info]	[fetchCompletions] Request f7d19a5a-0269-4bd1-90c1-a662c98216c6 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 292.5229999999865ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:06:46.573
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:06:48.110
+!MESSAGE [Info]	[fetchCompletions] Request f64bcaa2-0ae7-4af7-baad-874aa4372f3c at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 311.40649999998277ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:06:48.153
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:07:00.537
+!MESSAGE [Info]	[fetchCompletions] Request 36cfdbd2-2eae-4ba1-86b8-755bccd57a01 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 276.0625ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:07:00.598
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:07:02.446
+!MESSAGE [Info]	[fetchCompletions] Request 87bcec96-3419-43bf-baee-a539e1e5d8f8 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 275.69980000000214ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:07:02.508
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:07:11.409
+!MESSAGE [Info]	[fetchCompletions] Request 41f1ce21-07c4-4315-b7cb-e020a3082815 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 274.41300000000047ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:07:11.410
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:07:13.113
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:07:13.116
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:16:47.027
+!MESSAGE [Info]	[fetchCompletions] Request 5e38cfb1-7ec4-49f1-947b-b74ea16675fb at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 808.625ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:16:47.504
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:17:03.389
+!MESSAGE [Info]	[fetchCompletions] Request 1fa86a6b-d1e6-436d-882d-261020e13bfb at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 390.3913000000175ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:17:03.511
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:17:06.771
+!MESSAGE [Info]	[fetchCompletions] Request d9883587-c839-46f4-8d8a-4fabf4f52aa0 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 302.0417000000598ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:17:06.933
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:17:11.362
+!MESSAGE [Info]	[fetchCompletions] Request 9376a0c8-9493-4d9a-996b-2f0ee8e8e8ce at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 353.46349999995437ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:17:11.406
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:17:14.225
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:17:14.228
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 20:25:49.035
+!MESSAGE Classpath changed for project: springframeworkdemoapp
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:25:49.285
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:25:49.289
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:26:10.428
+!MESSAGE [Info] Language ID not found for extension: xml
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:26:12.592
+!MESSAGE [Info]	[fetchCompletions] Request 17dd1f2f-b652-4231-a157-14e0e6ff6d25 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 660.093899999978ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:26:13.326
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:26:13.634
+!MESSAGE [Info]	[fetchCompletions] Request b2b0d2b2-5ec5-4156-8cb1-6efae7101aa0 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 297.23750000004657ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:26:14.519
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:26:22.719
+!MESSAGE [Info]	[fetchCompletions] Request b0b312f9-0174-46b4-b3ed-e7ee808e4b86 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 286.4723999998532ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:26:23.538
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:26:23.818
+!MESSAGE [Info]	[fetchCompletions] Request 6f61006b-8806-4e8c-9a2f-59870a433dd9 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 264.6512000001967ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:26:24.493
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:26:29.986
+!MESSAGE [Info]	[fetchCompletions] Request f8cd7844-bcae-4c5e-ae70-e098cbc60887 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 284.20699999993667ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:26:30.679
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:26:31.165
+!MESSAGE [Info]	[fetchCompletions] Request 63900dc5-6e78-4a8e-ac99-4b96d5833a9b at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 295.5856999999378ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:26:31.468
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:26:34.744
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:26:35.990
+!MESSAGE [Info]	[code-referencing] No match found
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:26:44.401
+!MESSAGE [Info]	[fetchCompletions] Request a1bd59d2-0d4f-4ff2-af54-639b94932723 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 296.68009999999776ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:26:44.436
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:26:45.574
+!MESSAGE [Info]	[fetchCompletions] Request 2cdd8a86-defe-4816-8b27-a988a511c910 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 303.76350000011735ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:26:45.929
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:26:46.294
+!MESSAGE [Info]	[fetchCompletions] Request 29a46206-3207-4e6b-b1ea-ca2f98317c95 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 277.1350000000093ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:26:46.640
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:26:47.891
+!MESSAGE [Info]	[fetchCompletions] Request 5a6b4884-a5dc-40b4-aeee-216d615bdd4e at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 272.8248999998905ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:26:48.289
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:27:08.334
+!MESSAGE [Info]	[fetchCompletions] Request 58051ad0-e1ba-472a-964f-75b0e69e92de at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 280.4505000000354ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:27:08.767
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:27:09.052
+!MESSAGE [Info]	[fetchCompletions] Request 992f668b-64ff-434f-bce9-18bf98cb5248 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 274.46140000014566ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:27:09.053
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:27:09.367
+!MESSAGE [Info]	[fetchCompletions] Request 0849d410-bda1-4a65-8558-acdbf876069e at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 271.4643000001088ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:27:09.407
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:27:11.621
+!MESSAGE [Info]	[fetchCompletions] Request d2c1e228-31fc-44d8-aa7b-cf4d19df145c at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 267.11960000009276ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:27:11.686
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:27:12.711
+!MESSAGE [Info]	[fetchCompletions] Request 16cabacd-aeb7-4728-9d7a-3f39c5c1d675 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 359.75290000019595ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:27:12.795
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:27:16.809
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:27:17.218
+!MESSAGE [Info]	[code-referencing] No match found
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:27:20.073
+!MESSAGE [Info]	[fetchCompletions] Request 31b70bea-c0da-4bac-ad52-ab0ab770c926 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 275.47770000016317ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:27:20.107
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-08-22 20:27:22.197
+!MESSAGE Could not read pom.xml
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:245)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.model.io.ModelParseException: expected > to finsh end tag not < from line 5 (position: TEXT seen ...<version>0.0.1-SNAPSHOT</version\r\n\r\n<... @7:2) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
+	... 24 more
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected > to finsh end tag not < from line 5 (position: TEXT seen ...<version>0.0.1-SNAPSHOT</version\r\n\r\n<... @7:2) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:2172)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1418)
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextText(MXParser.java:1335)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2175)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
+	... 26 more
+!SUBENTRY 1 org.eclipse.m2e.core 4 0 2025-08-22 20:27:22.199
+!MESSAGE Could not read pom.xml
+!STACK 0
+org.apache.maven.model.io.ModelParseException: expected > to finsh end tag not < from line 5 (position: TEXT seen ...<version>0.0.1-SNAPSHOT</version\r\n\r\n<... @7:2) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected > to finsh end tag not < from line 5 (position: TEXT seen ...<version>0.0.1-SNAPSHOT</version\r\n\r\n<... @7:2) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:2172)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1418)
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextText(MXParser.java:1335)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2175)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
+	... 26 more
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:27:30.720
+!MESSAGE [Info]	[fetchCompletions] Request 8ce4cb11-aed7-4a65-b2df-d47e1a716d7f at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 291.3428000002168ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:27:30.764
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:27:53.838
+!MESSAGE [Info]	[fetchCompletions] Request 62087b1f-4038-43cd-9fde-66ca2e7967a6 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 275.88400000007823ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:27:53.903
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:27:55.873
+!MESSAGE [Info]	[fetchCompletions] Request acce6437-6ae7-4216-8d44-0cf4d29d3e3a at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 259.9412000000011ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:27:55.913
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:27:56.903
+!MESSAGE [Info]	[fetchCompletions] Request 2bed90b6-ea86-46ef-8266-d0d4c8478e23 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 275.4727999998722ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:27:56.950
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:28:02.945
+!MESSAGE [Info]	[fetchCompletions] Request a8b7ec63-5e7e-4a4e-8379-f7139b3c153f at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 279.59049999993294ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:28:03.648
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:28:04.547
+!MESSAGE [Info]	[fetchCompletions] Request e48d6372-2629-4c5f-914d-9351831dfaa7 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 277.23670000000857ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:28:05.215
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:28:06.088
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:28:06.511
+!MESSAGE [Info]	[code-referencing] No match found
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-08-22 20:28:10.262
+!MESSAGE Failed to read Maven project: Some problems were encountered while processing the POMs:
+[FATAL] Non-parseable POM C:\STS\Vine Class\SpringVSSpringboot\springframeworkdemoapp\pom.xml: expected > to finsh end tag not < from line 5 (position: TEXT seen ...<version>0.0.1-SNAPSHOT</version\r\n\r\n<... @7:2)  @ line 7, column 2
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-parseable POM C:\STS\Vine Class\SpringVSSpringboot\springframeworkdemoapp\pom.xml: expected > to finsh end tag not < from line 5 (position: TEXT seen ...<version>0.0.1-SNAPSHOT</version\r\n\r\n<... @7:2)  @ line 7, column 2
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-08-22 20:28:10.368
+!MESSAGE Could not read pom.xml
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:245)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.model.io.ModelParseException: expected > to finsh end tag not < from line 5 (position: TEXT seen ...<version>0.0.1-SNAPSHOT</version\r\n\r\n<... @7:2) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
+	... 24 more
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected > to finsh end tag not < from line 5 (position: TEXT seen ...<version>0.0.1-SNAPSHOT</version\r\n\r\n<... @7:2) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:2172)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1418)
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextText(MXParser.java:1335)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2175)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
+	... 26 more
+!SUBENTRY 1 org.eclipse.m2e.core 4 0 2025-08-22 20:28:10.368
+!MESSAGE Could not read pom.xml
+!STACK 0
+org.apache.maven.model.io.ModelParseException: expected > to finsh end tag not < from line 5 (position: TEXT seen ...<version>0.0.1-SNAPSHOT</version\r\n\r\n<... @7:2) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected > to finsh end tag not < from line 5 (position: TEXT seen ...<version>0.0.1-SNAPSHOT</version\r\n\r\n<... @7:2) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:2172)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1418)
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextText(MXParser.java:1335)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2175)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
+	... 26 more
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:28:22.165
+!MESSAGE [Info]	[fetchCompletions] Request 47b2056e-ae3b-43ec-9aae-0ad98297c066 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 303.98529999982566ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:28:22.211
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:28:23.593
+!MESSAGE [Info]	[fetchCompletions] Request 0d5a6925-3277-449d-8047-3250ed10d2e5 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 298.93880000011995ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:28:23.651
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:28:26.379
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:28:26.382
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 20:28:26.417
+!MESSAGE Classpath changed for project: springframeworkdemoapp
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 20:28:26.418
+!MESSAGE Boot project ADDED: springframeworkdemoapp
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:28:27.497
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:28:27.501
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:28:31.125
+!MESSAGE [Info]	[fetchCompletions] Request 151e4548-7afe-4319-8574-da9be74758c0 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 266.74640000006184ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:28:31.125
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:28:36.703
+!MESSAGE [Info]	[fetchCompletions] Request d60ea480-49ca-4b25-b03a-1d05c13d3356 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 275.7219000000041ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:28:37.030
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:28:39.282
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:28:39.286
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 20:28:39.335
+!MESSAGE Classpath changed for project: springframeworkdemoapp
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:28:40.500
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:28:40.503
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:29:58.984
+!MESSAGE [Info]	[fetchCompletions] Request 9384bea8-e3a1-418b-bbac-c63db29fdd98 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 269.54080000007525ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:29:59.335
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:02.317
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:02.733
+!MESSAGE [Info]	[code-referencing] No match found
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:06.045
+!MESSAGE [Info]	[fetchCompletions] Request 08cb3200-70f2-43f6-91d4-4acbc7daf4b3 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 258.27129999990575ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:06.097
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:07.271
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:07.684
+!MESSAGE [Info]	[code-referencing] No match found
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:09.219
+!MESSAGE [Info]	[fetchCompletions] Request e1e8c906-4ae9-4ea3-abb5-24c6bc87bbb1 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 267.51879999996163ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:09.219
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:10.212
+!MESSAGE [Info]	[fetchCompletions] Request ab24fdc2-88af-4499-9a08-0327b6b8fa38 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 383.3116000001319ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:10.219
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:10.501
+!MESSAGE [Info]	[fetchCompletions] Request 3df1f283-f05d-4ca3-a8ff-bc4ad8087057 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 251.876200000057ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:10.509
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:10.820
+!MESSAGE [Info]	[fetchCompletions] Request d82f2fca-f217-40f7-880c-93a33e044c8e at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 279.3237000000663ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:10.840
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:11.146
+!MESSAGE [Info]	[fetchCompletions] Request ca61dce2-cabd-4867-98c8-96f2fb16c9f3 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 270.98629999998957ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:11.147
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:12.052
+!MESSAGE [Info]	[fetchCompletions] Request ade2d672-66fb-49dc-9a3f-fa0522ac0771 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 277.3314000000246ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:12.092
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:30:13.687
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:30:13.694
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 20:30:13.735
+!MESSAGE Classpath changed for project: springframeworkdemoapp
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:30:13.849
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:30:13.853
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:41.599
+!MESSAGE [Info]	[fetchCompletions] Request e2ed607c-6b4d-41db-865b-868e322fe09d at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 258.8643999998458ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:41.602
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:43.951
+!MESSAGE [Info]	[fetchCompletions] Request 70f030fe-0de2-47ff-b2af-9d10d9fc05fb at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 277.21080000000075ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:44.230
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:51.727
+!MESSAGE [Info]	[fetchCompletions] Request 460a36e1-4bae-4d0f-9e93-1cba726980db at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 249.76909999991767ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:51.834
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:52.169
+!MESSAGE [Info]	[fetchCompletions] Request 28b200a9-53b7-4db0-92ea-47e92b9fec88 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 311.2759000000078ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:52.231
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:54.320
+!MESSAGE [Info]	[fetchCompletions] Request bee8c946-e48f-4c18-baf7-645f5177042a at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 282.4102000000421ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:54.760
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:55.125
+!MESSAGE [Info]	[fetchCompletions] Request f72160a4-953b-4b78-90bc-43573c636dc3 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 324.11309999995865ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:30:55.126
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:31:35.776
+!MESSAGE [Info]	[fetchCompletions] Request e07d7193-3af7-43a5-be1d-e75bda9985d8 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 274.2534000000451ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:31:35.837
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:31:48.442
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:31:48.446
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 20:31:48.493
+!MESSAGE Classpath changed for project: springframeworkdemoapp
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 20:31:48.550
+!MESSAGE Classpath changed for project: springframeworkdemoapp
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:31:49.562
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:31:49.566
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:33:47.997
+!MESSAGE [Info]	[fetchCompletions] Request a2c115b6-0031-4a1d-89c0-dae6f5f91b3b at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 663.4192999999505ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:33:48.301
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:33:48.711
+!MESSAGE [Info]	[fetchCompletions] Request 74e14120-a2d9-49b2-8e63-cd74574be2e7 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 265.76919999998063ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:33:49.619
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:34:00.393
+!MESSAGE [Info]	[fetchCompletions] Request ec51e512-918e-4988-b675-9d0c2fd680dd at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 279.657300000079ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:34:00.443
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:34:00.829
+!MESSAGE [Info]	[fetchCompletions] Request e9babe99-ffac-44aa-9ad0-0f299725629f at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 285.38509999983944ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:34:00.870
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-08-22 20:34:10.976
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:152)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:225)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4124)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-08-22 20:34:10.987
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:73)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-08-22 20:34:18.787
+!MESSAGE Could not get trigger characters due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getFuture(LSContentAssistProcessor.java:336)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getCompletionProposalAutoActivationCharacters(LSContentAssistProcessor.java:377)
+	at org.eclipse.jface.text.contentassist.IContentAssistProcessorExtension$1.isCompletionProposalAutoActivation(IContentAssistProcessorExtension.java:115)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.getAutoActivationTriggerType(ContentAssistant.java:1249)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.keyPressed(ContentAssistant.java:346)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$InternalListener.verifyKey(ContentAssistant.java:835)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:482)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:68)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1198)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1183)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:853)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5740)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5424)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1198)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1183)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1225)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1221)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1704)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4849)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:347)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4727)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5091)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3710)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-08-22 20:34:18.839
+!MESSAGE Could not get trigger characters due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getFuture(LSContentAssistProcessor.java:336)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getCompletionProposalAutoActivationCharacters(LSContentAssistProcessor.java:377)
+	at org.eclipse.jface.text.contentassist.IContentAssistProcessorExtension$1.isCompletionProposalAutoActivation(IContentAssistProcessorExtension.java:115)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.getAutoActivationTriggerType(ContentAssistant.java:1249)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.keyPressed(ContentAssistant.java:346)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.verifyKey(ContentAssistant.java:375)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:482)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:68)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1198)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1183)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:853)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5740)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5424)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1198)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1183)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1225)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1221)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1704)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4849)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:347)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4727)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5091)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3710)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:34:22.336
+!MESSAGE The POM for mysql:mysql-connector-j:jar:9.0.0 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:34:22.457
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:34:22.461
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 20:34:22.618
+!MESSAGE Classpath changed for project: springframeworkdemoapp
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 20:34:22.679
+!MESSAGE Classpath changed for project: springframeworkdemoapp
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-08-22 20:34:23.792
+!MESSAGE Could not download sources for mysql:mysql-connector-j:9.0.0
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact mysql:mysql-connector-j:jar:sources:9.0.0
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing mysql:mysql-connector-j:jar:sources:9.0.0
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2025-08-22 20:34:23.793
+!MESSAGE Could not resolve artifact mysql:mysql-connector-j:jar:sources:9.0.0
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2025-08-22 20:34:23.793
+!MESSAGE Missing mysql:mysql-connector-j:jar:sources:9.0.0
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:35:46.025
+!MESSAGE The POM for mysql:mysql-connector-j:jar:9.4.0 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:35:46.187
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:35:46.193
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 20:35:46.246
+!MESSAGE Classpath changed for project: springframeworkdemoapp
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-08-22 20:35:47.524
+!MESSAGE Could not download sources for mysql:mysql-connector-j:9.4.0
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact mysql:mysql-connector-j:jar:sources:9.4.0
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing mysql:mysql-connector-j:jar:sources:9.4.0
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2025-08-22 20:35:47.524
+!MESSAGE Could not resolve artifact mysql:mysql-connector-j:jar:sources:9.4.0
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2025-08-22 20:35:47.524
+!MESSAGE Missing mysql:mysql-connector-j:jar:sources:9.4.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:35:58.851
+!MESSAGE [Info]	[fetchCompletions] Request 0ceebe54-6df0-4720-a2a8-002a5cf3d4f3 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 314.4502999999095ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:35:58.940
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:36:03.084
+!MESSAGE [Info]	[fetchCompletions] Request f31b4454-ba62-4db5-9f98-6fc17dcf7024 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 300.1148000000976ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:36:03.129
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:36:05.954
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:36:05.959
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 20:36:05.995
+!MESSAGE Classpath changed for project: springframeworkdemoapp
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 20:36:06.065
+!MESSAGE Classpath changed for project: springframeworkdemoapp
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:36:07.079
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:36:07.089
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:37:26.715
+!MESSAGE [Info] Document is null for editor: pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:37:26.718
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringboot/springframeworkdemoapp/pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:37:26.976
+!MESSAGE [Info] Document is null for editor: Main.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:37:26.976
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringboot/SpringFrameworkDemo/src/main/java/com/vine/Main.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:37:27.126
+!MESSAGE [Info] Document is null for editor: Controller.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:37:27.127
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringboot/SpringFrameworkDemo/src/main/java/com/vine/Controller.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:37:27.349
+!MESSAGE [Info] Document is null for editor: AppConfig.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:37:27.350
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringboot/SpringFrameworkDemo/src/main/java/com/vine/AppConfig.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:37:27.754
+!MESSAGE [Info] Document is null for editor: pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:37:27.755
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringboot/SpringFrameworkDemo/pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:37:28.730
+!MESSAGE [Info] Document is null for editor: pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:37:28.732
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringboot/SpringFrameworkDemo/pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:37:29.046
+!MESSAGE [Info] Document is null for editor: pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:37:29.047
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringboot/SpringBootDemo/pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:37:29.308
+!MESSAGE [Info] Document is null for editor: SpringBootDemoApplication.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:37:29.309
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringboot/SpringBootDemo/src/main/java/com/example/demo/SpringBootDemoApplication.java
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 20:38:04.486
+!MESSAGE Classpath changed for project: springframeworkdemoapp
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 20:38:04.488
+!MESSAGE Boot project REMOVED: springframeworkdemoapp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2025-08-22 20:38:04.493
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): springframeworkdemoapp does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2611)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2352)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2395)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:439)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2025-08-22 20:38:04.493
+!MESSAGE springframeworkdemoapp does not exist
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:38:04.792
+!MESSAGE [Info] Document is null for editor: pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:38:04.793
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringboot/springframeworkdemoapp/pom.xml
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:39:51.310
+!MESSAGE [Info]	[fetchCompletions] Request e1163705-f6cf-4560-b963-f27411350e33 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 675.338699999731ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:39:51.399
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:39:51.689
+!MESSAGE [Info]	[fetchCompletions] Request 9f28b12f-cada-4129-8903-101fcc96804d at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 271.58430000022054ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:39:51.766
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:39:52.114
+!MESSAGE [Info]	[fetchCompletions] Request f1d848bd-b7df-4e11-b83b-1f7a25922c58 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 277.4631000002846ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:39:52.225
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:39:52.749
+!MESSAGE [Info]	[fetchCompletions] Request 1f26f3ae-177a-4c90-b76e-d5d5a2d425ba at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 266.8303999998607ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:39:52.877
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:39:53.742
+!MESSAGE [Info]	[fetchCompletions] Request 60297731-6635-463d-977f-53d672af0248 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 264.80709999985993ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:39:53.951
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:39:54.325
+!MESSAGE [Info]	[fetchCompletions] Request b724aa22-654c-4369-ae2c-d9cf20824ef3 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 261.98689999990165ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:39:54.423
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:39:57.816
+!MESSAGE [Info]	[fetchCompletions] Request b02cddda-af15-482e-9f04-04483293039d at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 322.47509999992326ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:39:57.885
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:39:59.006
+!MESSAGE [Info]	[fetchCompletions] Request de5e3149-b1fc-4426-b70d-ff612b084dc4 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 340.1094000004232ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:39:59.043
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:39:59.615
+!MESSAGE [Info]	[fetchCompletions] Request fbadac67-b54a-4529-8333-9ca420ee2e15 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 285.4248999999836ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:39:59.727
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:40:03.360
+!MESSAGE [Info]	[fetchCompletions] Request f79f32f2-99fb-4193-876d-01efa022235c at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 280.80429999995977ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:40:03.462
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:40:03.856
+!MESSAGE [Info]	[fetchCompletions] Request 8e754640-fc24-4b63-9ae1-d961794c50db at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 251.38689999980852ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:40:03.913
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:40:04.197
+!MESSAGE [Info]	[fetchCompletions] Request d6b43070-7694-4d8b-bcf3-749e17a8605b at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 261.4358000000939ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:40:04.272
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:40:04.895
+!MESSAGE [Info]	[fetchCompletions] Request 84c2acbe-0249-4ee0-b255-a366cdd3429d at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 272.7604000000283ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:40:04.973
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:40:05.724
+!MESSAGE [Info]	[fetchCompletions] Request 54136fab-c944-4356-835e-c7d6d7e94bc9 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 277.0472999997437ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:40:05.812
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:40:08.421
+!MESSAGE [Info]	[fetchCompletions] Request 6ea7d9c5-fb93-42d2-8eec-0b0fd5b3d2c4 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 279.03440000023693ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:40:08.462
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:40:08.785
+!MESSAGE [Info]	[fetchCompletions] Request 553b0788-b1eb-4145-aa8d-97bfbfcc5e07 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 303.6743000000715ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:40:08.829
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:40:10.066
+!MESSAGE [Info]	[fetchCompletions] Request 97ceb3e1-4483-4b50-926b-556d550ab3b0 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 285.5537000000477ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:40:10.199
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [null]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:41:48.340
+!MESSAGE [Info]	[fetchCompletions] Request 0327c135-5fcd-4479-9ff7-c3f457c8a64f at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 262.8821999998763ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:41:49.644
+!MESSAGE [Info]	[fetchCompletions] Request 33131249-531f-4b4a-9799-eaf2171cd3bf at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 257.08600000012666ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:41:49.702
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:41:49.971
+!MESSAGE [Info]	[fetchCompletions] Request d6e453d9-4690-4032-a2d8-a04db51cb11c at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 254.60499999998137ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:41:50.014
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:41:50.315
+!MESSAGE [Info]	[fetchCompletions] Request de44c7be-0c40-4286-93ec-0e245e06bf8f at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 286.47179999994114ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:41:50.356
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:41:52.791
+!MESSAGE [Info]	[fetchCompletions] Request fe76884f-6370-4d05-90b2-5fb605474e1c at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 283.27900000009686ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:41:52.835
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:41:53.283
+!MESSAGE [Info]	[fetchCompletions] Request 9b4e520a-1f13-4a17-8b4e-72a6ae065d4b at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 278.2367000002414ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:41:54.383
+!MESSAGE [Info]	[fetchCompletions] Request e5191165-b98c-4524-97e9-fd89bb7c79b2 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 306.5474999998696ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:42:00.972
+!MESSAGE [Info]	[fetchCompletions] Request edb53698-f08f-42aa-b886-841d5ff4fcf3 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 270.3626000001095ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:42:01.915
+!MESSAGE [Info]	[fetchCompletions] Request a80e4960-9a6d-418a-a562-379694cc4077 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 280.02980000013486ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:42:06.694
+!MESSAGE [Info]	[fetchCompletions] Request 09902502-cae9-4ba4-bcf2-878c4d49e99a at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 271.49740000022575ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:42:09.704
+!MESSAGE [Info]	[fetchCompletions] Request 70dfab64-f477-42f9-a4f0-6e07efa0e470 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 261.7662999997847ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:42:16.257
+!MESSAGE [Info]	[fetchCompletions] Request ce5f0053-85fd-4798-b5ce-b0d5f0a7b80d at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 276.7431000000797ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:42:16.514
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:42:20.538
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:42:20.540
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:42:49.300
+!MESSAGE [Info]	[fetchCompletions] Request 4a5edbc1-1e96-435a-87b0-4c4bef9174f7 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 288.3721000002697ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:42:49.590
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:42:49.886
+!MESSAGE [Info]	[fetchCompletions] Request 362e3ce0-102a-4aa1-926c-28a58405f0bc at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 273.3522000000812ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:42:49.920
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:42:51.379
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:42:51.387
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 20:42:51.660
+!MESSAGE Classpath changed for project: SpringFrameworkDemo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-08-22 20:42:51.705
+!MESSAGE Classpath changed for project: SpringFrameworkDemo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:42:52.700
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:42:52.702
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:42:57.386
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:42:57.397
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:43:35.118
+!MESSAGE [Info]	[fetchCompletions] Request abb807f7-ddf1-4801-b76b-257daa315ccf at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 290.04469999996945ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:43:35.149
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:43:36.773
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:43:36.775
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:13.247
+!MESSAGE [Info]	[fetchCompletions] Request 73c09dfd-4e23-46ae-a415-86498621e497 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 344.57469999976456ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:13.296
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:13.846
+!MESSAGE [Info]	[fetchCompletions] Request f8990ca4-21a4-47bc-9324-5e9a9ba9a37e at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 294.6070000003092ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:13.897
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:14.813
+!MESSAGE [Info]	[fetchCompletions] Request 65ef2226-2932-405d-b066-45da15bc0b8a at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 283.15620000008494ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:16.132
+!MESSAGE [Info]	[fetchCompletions] Request 7b62afb0-525f-4748-a9ff-32edac0f2df1 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 274.3717000000179ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:16.179
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:18.666
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:18.667
+!MESSAGE [Info]	[fetchCompletions] Request 189e0133-8045-4bf8-8dff-2b0e27d55720 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 296.9647999997251ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:19.659
+!MESSAGE [Info]	[fetchCompletions] Request 0ddb1389-1f71-490b-9d1d-47bd13605237 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 290.9756000000052ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:19.702
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:23.208
+!MESSAGE [Info]	[fetchCompletions] Request 7b12f28f-745a-49e6-bf72-526de73587d1 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 299.96570000005886ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:23.214
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:23.593
+!MESSAGE [Info]	[fetchCompletions] Request 2a75f71a-01f1-4c74-9cf2-ac7982c8fb6e at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 295.83580000000075ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:23.636
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:26.722
+!MESSAGE [Info]	[fetchCompletions] Request bdffe702-75e9-4a66-840e-a1586ff0e5dd at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 293.904399999883ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:26.722
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:27.089
+!MESSAGE [Info]	[fetchCompletions] Request 1a7aac02-ac10-4d6a-9e68-11f7264f4b80 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 275.03349999990314ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:27.138
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:28.538
+!MESSAGE [Info]	[fetchCompletions] Request d9f088b7-6d54-46c1-a4e9-d17cd7a490d8 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 287.05890000006184ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:28.588
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:28.872
+!MESSAGE [Info]	[fetchCompletions] Request b0c05177-6c7c-45d7-923a-3456bff052ec at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 280.5712999999523ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:28.933
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:31.304
+!MESSAGE [Info]	[fetchCompletions] Request 6feffda2-9105-4e01-8c94-c22f0c9cac97 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 300.51849999977276ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:31.304
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:32.727
+!MESSAGE [Info]	[fetchCompletions] Request 8a88f7cf-8b23-4fe6-9b87-edff83c9965d at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 290.6685000001453ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:32.773
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:34.851
+!MESSAGE [Info]	[fetchCompletions] Request 7bf6983e-a231-481f-bdca-a0cc836daa91 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 269.8204000000842ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:34.898
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:35.342
+!MESSAGE [Info]	[fetchCompletions] Request 7d1ae429-65a5-4355-9996-6a18171b6629 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 271.0651000002399ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:35.401
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [null]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:38.073
+!MESSAGE [Info]	[fetchCompletions] Request 500b4363-05e2-4c87-9b1c-1f5b5b2fd7d6 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 279.04859999986365ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:38.079
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:39.285
+!MESSAGE [Info]	[fetchCompletions] Request 78ca4cb3-f10b-4b85-b4e8-259d9a454862 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 284.1666999999434ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:39.325
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:39.768
+!MESSAGE [Info]	[fetchCompletions] Request ae18d92e-b4a2-4442-ae69-bf93437b4a29 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 293.39910000003874ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:45:39.817
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:48:03.688
+!MESSAGE [Info]	[fetchCompletions] Request 610b4de4-3a72-4d1b-8823-d0df922c5e3b at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 697.9224999998696ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:48:03.820
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:48:04.681
+!MESSAGE [Info]	[fetchCompletions] Request e3f021b8-e61e-47b1-816b-414d6277b51c at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 274.99580000014976ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:48:04.744
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:48:05.533
+!MESSAGE [Info]	[fetchCompletions] Request 8422a527-4e8a-49b6-800e-6621b5a5770d at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 268.6267000003718ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:48:05.588
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:48:05.917
+!MESSAGE [Info]	[fetchCompletions] Request 5aebf497-2a55-4bcf-9e36-d34f2ba874ea at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 254.4761999999173ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:48:05.988
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:48:06.344
+!MESSAGE [Info]	[fetchCompletions] Request 928661fa-e332-40ac-b8ca-2190c2efde96 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 272.20579999964684ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:48:06.397
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:48:10.233
+!MESSAGE [Info]	[fetchCompletions] Request 1ef311ad-e2a1-46ca-b1d2-26f385f8c1c6 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 366.0767000000924ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:48:10.263
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:50:01.163
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:50:01.167
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:52:27.180
+!MESSAGE [Info]	[fetchCompletions] Request e6a3a48c-33fc-4b44-8146-f9764e70e327 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 695.6869000000879ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:52:27.296
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:52:29.428
+!MESSAGE [Info]	[fetchCompletions] Request f7c0a422-d825-4dea-9c0d-14b2914d8695 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 261.1537000001408ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:52:29.613
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:52:30.004
+!MESSAGE [Info]	[fetchCompletions] Request a797abd3-68d5-4b30-9acf-869fd5accc4e at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 259.40660000033677ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:52:30.094
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:52:30.922
+!MESSAGE [Info]	[fetchCompletions] Request e66aef4b-f567-4bf6-8014-225f113df945 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 297.4510000003502ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:52:31.022
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:55:12.711
+!MESSAGE [Info]	[fetchCompletions] Request 5a641ba5-ea51-4db1-a066-3c65651c7977 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 662.0471000000834ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:55:12.765
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:55:13.028
+!MESSAGE [Info]	[fetchCompletions] Request fc38e8fa-89ec-449c-8ef5-76e254e0cd86 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 257.26619999995455ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:55:13.091
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:55:13.390
+!MESSAGE [Info]	[fetchCompletions] Request bdfb77b6-a773-4906-83e1-81885e48636a at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 287.00740000000224ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:55:13.429
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:55:13.774
+!MESSAGE [Info]	[fetchCompletions] Request cf130dbb-b61a-45b1-9654-d8c57ef5d073 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 291.60479999985546ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:55:13.827
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:55:19.657
+!MESSAGE [Info]	[fetchCompletions] Request b50fcfc1-3fe2-4820-8c9e-16336309cfd3 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 271.2998999999836ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-22 20:55:19.699
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:56:05.842
+!MESSAGE [Info] Document is null for editor: pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:56:05.843
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringboot/SpringFrameworkDemo/pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:56:05.891
+!MESSAGE [Info] Document is null for editor: Main.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:56:05.892
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringboot/SpringFrameworkDemo/src/main/java/com/vine/Main.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:56:05.948
+!MESSAGE [Info] Document is null for editor: AppConfig.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:56:05.949
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringboot/SpringFrameworkDemo/src/main/java/com/vine/AppConfig.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:56:05.989
+!MESSAGE [Info] Document is null for editor: Controller.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:56:05.990
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringboot/SpringFrameworkDemo/src/main/java/com/vine/Controller.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:56:06.009
+!MESSAGE [Info] Document is null for editor: pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:56:06.009
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringboot/SpringBootDemo/pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:56:06.026
+!MESSAGE [Info] Document is null for editor: web.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:56:06.026
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringboot/SpringFrameworkDemo/src/main/WEBINF/web.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:56:06.057
+!MESSAGE [Info] Document is null for editor: SpringBootDemoApplication.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-22 20:56:06.057
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/STS/Vine%20Class/SpringVSSpringboot/SpringBootDemo/src/main/java/com/example/demo/SpringBootDemoApplication.java
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:56:06.066
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-08-22 20:56:06.071
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!

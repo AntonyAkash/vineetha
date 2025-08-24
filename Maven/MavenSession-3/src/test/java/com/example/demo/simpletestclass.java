@@ -1,0 +1,12 @@
+package com.example.demo;
+
+import org.junit.jupiter.api.Test;
+
+public class simpletestclass {
+	
+   @Test
+   public void testMethod() {
+	   // This is a simple test method
+	   System.out.println("This is a test method in a simple test class.");
+   }
+}

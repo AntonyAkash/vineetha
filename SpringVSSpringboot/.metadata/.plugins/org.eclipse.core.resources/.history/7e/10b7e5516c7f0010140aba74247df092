@@ -1,0 +1,6 @@
+package com.vine;
+
+@Controller
+public class Controller {
+
+}
