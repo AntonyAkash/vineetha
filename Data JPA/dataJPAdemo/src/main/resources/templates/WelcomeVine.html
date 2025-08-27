@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome to Vine</title>
+	<link rel="stylesheet" th:href="@{/css/style.css}">
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+	<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Welcome to Vine</h1>
+		<p>This is the welcome page for the Vine application.</p>
+		<a th:href="@{/vines}" class="btn btn-primary">View Vines</a>
+	</div>
+</body>
+
+</html>

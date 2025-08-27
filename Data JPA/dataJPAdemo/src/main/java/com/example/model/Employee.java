@@ -1,5 +1,7 @@
 package com.example.model;
 
+import java.io.Serializable;
+
 import jakarta.persistence.ColumnResult;
 import jakarta.persistence.ConstructorResult;
 import jakarta.persistence.Entity;
@@ -9,6 +11,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.NamedNativeQuery;
 import jakarta.persistence.SqlResultSetMapping;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
@@ -35,7 +38,10 @@ import lombok.RequiredArgsConstructor;
 @Entity //java object to jpa entity
 @Data
 @RequiredArgsConstructor
-public class Employee {
+@NoArgsConstructor
+public class Employee implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

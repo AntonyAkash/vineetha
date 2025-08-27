@@ -3,8 +3,12 @@ package com.example.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
+import com.example.customexception.EmployeeNotfoundexception;
 import com.example.model.Employee;
 import com.example.repo.Emprepo;
 
@@ -33,9 +37,10 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
+    @Cacheable(value="employees", key="#id") // Caches the result of this method
     public Employee getEmployeeById(int id) {
         return employeeRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Employee not found with id: " + id));
+                .orElseThrow(() -> new EmployeeNotfoundexception("Employee not found with id: " + id));
     }
     
     @Override
@@ -49,6 +54,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
+    @CachePut(value="employees", key="#id") // Updates the cache for this method
     public Employee updateEmployee(int id, Employee employee) {
         Employee existing = getEmployeeById(id);
         existing.setName(employee.getName());
@@ -58,6 +64,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
+    @CacheEvict(value="employees", key="#id") // Evicts the cache for this method
+    //@CacheEvict(value="employees", allEntries=true) // Evicts all entries in the cache
     public void deleteEmployee(int id) {
         employeeRepository.deleteById(id);
     }

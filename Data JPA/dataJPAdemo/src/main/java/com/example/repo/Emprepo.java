@@ -68,7 +68,7 @@ public interface Emprepo extends JpaRepository<Employee, Integer> {
     //2. Native SQL Queries with @Query
     
     @Query(value = "SELECT * FROM employees WHERE department = :dept", nativeQuery = true)
-    List<Employee> getByDepartmentNative(@Param("dept") String dept);
+    List<Employee> getByDepartmentNative(@Param("dept") String dept); //kubernates  auto scalling 
 
     @Query(value = "SELECT * FROM employees WHERE salary BETWEEN :min AND :max", nativeQuery = true)
     List<Employee> findBySalaryRangeNative(@Param("min") double min, @Param("max") double max);

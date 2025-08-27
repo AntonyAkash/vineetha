@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+    <meta charset="UTF-8">
+    <title>Error - Vine Application</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+	</head>
+	<body>
+    <div class="container">
+        <h1 class="mt-5">An Error Occurred - Vine Application this is explicit eroor page</h1>
+        <div class="alert alert-danger mt-3" role="alert">
+            <p th:text="${errorMessage}">Error message goes here.</p>
+        </div>
+        <a th:href="@{/'}" class="btn btn-primary">Go to Home</a>
+    </div>
