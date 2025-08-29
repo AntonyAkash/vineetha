@@ -22,7 +22,7 @@ public class EmployeeController {// return response data in json format only // 
 	@Autowired
     private EmployeeService employeeService;
 
-	@PostMapping("/save")
+	@PostMapping
     public ResponseEntity<Employee> saveEmployee(@RequestBody Employee employee) {//object mapper class reatvalue() json to Employee
         return ResponseEntity.ok(employeeService.saveEmployee(employee));//object mapper class writevalueasstring() Employee to json 
     }
@@ -37,7 +37,7 @@ public class EmployeeController {// return response data in json format only // 
         return ResponseEntity.ok(employeeService.getEmployeeByName(name));
     }
 
-    @GetMapping("/all")
+    @GetMapping
     public ResponseEntity<List<Employee>> getAllEmployees() {
         return ResponseEntity.ok(employeeService.getAllEmployees());
     }
