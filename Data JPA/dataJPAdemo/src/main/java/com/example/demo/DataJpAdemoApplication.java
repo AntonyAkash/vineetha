@@ -11,7 +11,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @ComponentScan(basePackages = "com.example")
 @EntityScan(basePackages = "com.example")
 @EnableJpaRepositories(basePackages = "com.example.repo")
-@EnableCaching
+//@EnableCaching //hi Veni enable this line only when u have redis server running in your system
 public class DataJpAdemoApplication {
 
 	public static void main(String[] args) {
