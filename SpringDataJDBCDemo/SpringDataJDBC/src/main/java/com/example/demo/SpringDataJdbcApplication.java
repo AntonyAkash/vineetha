@@ -15,4 +15,6 @@ public class SpringDataJdbcApplication {
 		SpringApplication.run(SpringDataJdbcApplication.class, args);
 	}
 
+	//method to fix some sonar issue
+
 }
