@@ -15,4 +15,6 @@ public class SpringDataJdbcApplication {
 		SpringApplication.run(SpringDataJdbcApplication.class, args);
 	}
 
+	//method that is fixed in this branch and need for the current Story
+
 }
