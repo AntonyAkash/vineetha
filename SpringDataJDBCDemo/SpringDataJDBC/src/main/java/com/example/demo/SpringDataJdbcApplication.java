@@ -9,8 +9,6 @@ public class SpringDataJdbcApplication {
 	//Hi Vine How are you
 	//I am goog antony
 
-	//this Vine branch
-
 	public static void main(String[] args) {
 		SpringApplication.run(SpringDataJdbcApplication.class, args);
 	}
